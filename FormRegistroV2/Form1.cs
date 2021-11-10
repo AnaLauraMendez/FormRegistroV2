@@ -15,12 +15,9 @@ namespace FormRegistroV2
     public partial class Form1 : Form
     ///este es el constructor que inicializa todo
     {
-
+        //tengo que conectar back con front
         public Usuario Usuario = new Usuario();
         public BackFormulario BackFormulario = new BackFormulario();
-
-     
-
         public Form1()
         {
             InitializeComponent();
@@ -28,45 +25,24 @@ namespace FormRegistroV2
            dataGrid.DataSource = BackFormulario.daTa;
         }
 
-     
-
         private void btCancelar_Click(object sender, EventArgs e)
         {
             //Cancelar formulario con mensaje de confirmacion
             DialogResult M = MessageBox.Show("¿Desea salir del registro?", "Atención", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+
             if (M == DialogResult.OK)
                 this.Close();
-
         }
-      
- 
         private void btGuardar_Click(object sender, EventArgs e)
         {
-
-            Usuario.Nombre = txtNombre.Text;
-            Usuario.Apellido = txtApellido.Text;
-            Usuario.Nacimiento = dtFecha.Text;
-            BackFormulario.CargarRegistro(Usuario);
-
-        }
-
-        
-
-      
-
-        private void dtFecha_ValueChanged(object sender, EventArgs e)
-        {
-
-            //aca asigno a nombre,ap y nac lo que llene el usuario en los textbox
+            //aca asigno lo de cada elemento a cada propiedad
             Usuario.Nombre = txtNombre.Text;
             Usuario.Apellido = txtApellido.Text;
             Usuario.Nacimiento = dtFecha.Text;
 
+        //aca llamo elmetodo de carga y le tiro el usuarioc omo argumento
+            BackFormulario.CargarRegistro(Usuario); 
+
         }
-      
-         
-
-        
-
     }
 }

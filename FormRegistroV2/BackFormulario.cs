@@ -10,12 +10,10 @@ namespace FormRegistroV2
 
     public class BackFormulario
     {
-        //array
+        //tengoq eu crear el array y la tablita
         public Usuario[] Usuario { get; set; }
         public DataTable daTa { get; set; } = new DataTable();
-       
-       
-
+     
         //constructor donde creo als columnas
         public BackFormulario()
         {
@@ -26,8 +24,6 @@ namespace FormRegistroV2
 
             //llamo el metodo apra leer registro
             LeerRegistro();
-
-
         }
 
         public void LeerRegistro() //aca creamos el archivo xml y lo leemos
@@ -49,10 +45,13 @@ namespace FormRegistroV2
             daTa.Rows[Contador]["Nacimiento"] = usuario.Nacimiento;
 
             daTa.WriteXml("Archivo.xml");//vuelvo a llamar al xml
+                   }
+        ///public void ValidarVacio()
+        //{
+          ///  if (Usuario == string.IsNullOrEmpty)
 
-
-        }
-     
+      ///  }
+        
     }  
 
     
