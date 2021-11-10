@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace FormRegistroV2
 {
     public class Usuario
+<<<<<<< HEAD
     { 
         /// Creo las propiedades de la clase usuario en public para usarlas en el form
         public string Nombre { get; set; }
@@ -35,6 +36,16 @@ namespace FormRegistroV2
 
         }
 
+=======
+
+    { 
+
+        
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Nacimiento { get; set; }
+        
+>>>>>>> 152b7b0 (Version semifinal)
 
     }
 }

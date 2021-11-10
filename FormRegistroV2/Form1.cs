@@ -10,21 +10,42 @@ using System.Windows.Forms;
 
 
 namespace FormRegistroV2
+<<<<<<< HEAD
 {
     public partial class Form1 : Form
         ///este es el constructor que inicializa 
     {
         public object Confirmacion { get; private set; }
+=======
+   
+{
+    public partial class Form1 : Form
+    ///este es el constructor que inicializa todo
+    {
+
+        public Usuario Usuario = new Usuario();
+        public BackFormulario BackFormulario = new BackFormulario();
+
+     
+>>>>>>> 152b7b0 (Version semifinal)
 
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+=======
+            //aca leo la tabla
+           dataGrid.DataSource = BackFormulario.daTa;
+        }
+
+     
+>>>>>>> 152b7b0 (Version semifinal)
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
@@ -34,6 +55,7 @@ namespace FormRegistroV2
                 this.Close();
 
         }
+<<<<<<< HEAD
         public void mostrarConfirmacion()
         {
             ///Aca muestro un mensaje que diga contacto guardado
@@ -48,10 +70,22 @@ namespace FormRegistroV2
             if (txtNombre.Text != String.Empty)
                 mostrarConfirmacion();
 
+=======
+      
+ 
+        private void btGuardar_Click(object sender, EventArgs e)
+        {
+
+            Usuario.Nombre = txtNombre.Text;
+            Usuario.Apellido = txtApellido.Text;
+            Usuario.Nacimiento = dtFecha.Text;
+            BackFormulario.CargarRegistro(Usuario);
+>>>>>>> 152b7b0 (Version semifinal)
 
         }
 
         
+<<<<<<< HEAD
         
             private void Form1_Load(object sender, EventArgs e)
         {
@@ -74,5 +108,24 @@ namespace FormRegistroV2
             //aca llamo a mi metodo para mostrar
             lblMostrar.Text = usuarioParaMostrar.mostrarDatos();
         }
+=======
+
+      
+
+        private void dtFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+            //aca asigno a nombre,ap y nac lo que llene el usuario en los textbox
+            Usuario.Nombre = txtNombre.Text;
+            Usuario.Apellido = txtApellido.Text;
+            Usuario.Nacimiento = dtFecha.Text;
+
+        }
+      
+         
+
+        
+
+>>>>>>> 152b7b0 (Version semifinal)
     }
 }

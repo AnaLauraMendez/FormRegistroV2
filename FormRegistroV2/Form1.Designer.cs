@@ -42,6 +42,12 @@ namespace FormRegistroV2
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblOb1 = new System.Windows.Forms.Label();
             this.lblOb2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+>>>>>>> 152b7b0 (Version semifinal)
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +59,10 @@ namespace FormRegistroV2
             this.label1.Size = new System.Drawing.Size(143, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido usuario";
+<<<<<<< HEAD
             this.label1.Click += new System.EventHandler(this.label1_Click);
+=======
+>>>>>>> 152b7b0 (Version semifinal)
             // 
             // label2
             // 
@@ -101,7 +110,11 @@ namespace FormRegistroV2
             // 
             // btGuardar
             // 
+<<<<<<< HEAD
             this.btGuardar.Location = new System.Drawing.Point(38, 299);
+=======
+            this.btGuardar.Location = new System.Drawing.Point(80, 434);
+>>>>>>> 152b7b0 (Version semifinal)
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(75, 23);
             this.btGuardar.TabIndex = 6;
@@ -111,7 +124,11 @@ namespace FormRegistroV2
             // 
             // btCancelar
             // 
+<<<<<<< HEAD
             this.btCancelar.Location = new System.Drawing.Point(135, 299);
+=======
+            this.btCancelar.Location = new System.Drawing.Point(186, 434);
+>>>>>>> 152b7b0 (Version semifinal)
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(75, 23);
             this.btCancelar.TabIndex = 7;
@@ -160,11 +177,38 @@ namespace FormRegistroV2
             this.lblOb2.Size = new System.Drawing.Size(0, 13);
             this.lblOb2.TabIndex = 12;
             // 
+<<<<<<< HEAD
+=======
+            // dataGrid
+            // 
+            this.dataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(16, 249);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(318, 140);
+            this.dataGrid.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 392);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(248, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Presione Guardar para ingresar datos en el registro.";
+            // 
+>>>>>>> 152b7b0 (Version semifinal)
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(261, 336);
+=======
+            this.ClientSize = new System.Drawing.Size(351, 475);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dataGrid);
+>>>>>>> 152b7b0 (Version semifinal)
             this.Controls.Add(this.lblOb2);
             this.Controls.Add(this.lblOb1);
             this.Controls.Add(this.txtApellido);
@@ -180,7 +224,12 @@ namespace FormRegistroV2
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Formulario de Registro";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.Form1_Load);
+=======
+       
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+>>>>>>> 152b7b0 (Version semifinal)
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,6 +250,11 @@ namespace FormRegistroV2
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblOb1;
         private System.Windows.Forms.Label lblOb2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.Label label6;
+>>>>>>> 152b7b0 (Version semifinal)
     }
 }
 
